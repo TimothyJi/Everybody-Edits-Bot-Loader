@@ -49,17 +49,10 @@ namespace EEBL.Player
         public void PlayerJoin(IPlayer player, IMessageAdd message)
         {
             OnPlayerJoin?.Invoke(player, message);
-            if (OnPlayerJoin == null)
-            {
-                LogHelper.Info("Nullified");
-                return;
-            }
-            LogHelper.Info(OnPlayerJoin.ToString());
         }
 
         public void OnPlayerJoin_Subscribe(PlayerAddEvent e)
         {
-            LogHelper.Info("Subscribed");
             OnPlayerJoin += e;
         }
     }
