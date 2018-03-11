@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <ApplicationIcon />
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PlayerIOClient-Signed" Version="3.5.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="EEBLAPI">
+      <HintPath>..\EEBLAPI\bin\Debug\netcoreapp2.0\EEBLAPI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
