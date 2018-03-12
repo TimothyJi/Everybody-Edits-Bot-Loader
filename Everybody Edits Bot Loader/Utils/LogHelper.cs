@@ -20,7 +20,7 @@ namespace EEBL.Utils
 
         public static void Info(string source, string message)
         {
-            Log("[Info::" + source + "] " + message);
+            Log("[Info] [" + source + "] " + message);
         }
 
         public static void Warn(string message)
@@ -30,7 +30,7 @@ namespace EEBL.Utils
 
         public static void Warn(string source, string message)
         {
-            Log("[Warn/" + source + "] " + message);
+            Log("[Warn] [" + source + "] " + message);
         }
 
         public static void LogEvent(LogLevel level, string source, string message)
